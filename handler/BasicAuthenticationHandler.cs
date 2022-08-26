@@ -30,8 +30,12 @@ namespace ProductAPIVS.Handler
         Console.WriteLine(username);
         Console.WriteLine(password);
 
-        var user=this._DBContext.Users.FirstOrDefault(item=>item.Username==username && item.Password == password);
-        if(user==null){
+        var user = this._DBContext.Users.First();
+        Console.WriteLine(user);
+        Console.WriteLine(user.Username);
+        Console.WriteLine(user.Password);
+
+        if(user.Username == username && user.Password == password){
           return AuthenticateResult.Fail("UnAuthrorized");
         }
 
