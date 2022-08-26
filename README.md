@@ -21,5 +21,4 @@ for at lave et nyt certificat. i powershell some admin
  generate user secret
  dotnet user-secrets set "CertPassword" "password"# TodoApi
 
-
-
+Jeg har forsøgt at tilføje base64 encryption/decoding jeg har haft en del problemer med database osv. Men koncepterne er i orden.
